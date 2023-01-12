@@ -8,12 +8,4 @@ from django.template import loader
 def index(request):
         template=loader.get_template('index.html')
         return HttpResponse(template.render())
-def staff(request):
-        return render(request, 'contents/staff.html')
-def products(request):
-        return render(request, 'contents/products.html')
-def orders(request):
-        return render(request, 'contents/orders.html')
-def profile(request):
-        return render(request, 'contents/profile.html')
 # Create your views here.

@@ -6,17 +6,13 @@ from django.template import loader
 # def index(request):
 #     return HttpResponse("Allahu Akbar")
 # def index(request):
-#         template=loader.get_template('master.html')
+#         template=loader.get_template('dashboard.html')
 #         return HttpResponse(template.render())
-# def staff(request):
-#         template=loader.get_template('master.html')
-#         return HttpResponse(template.render())
-# def products(request):
-#         template=loader.get_template('master.html')
-#         return HttpResponse(template.render())
-# def orders(request):
-#         template=loader.get_template('master.html')
-#         return HttpResponse(template.render())
-# def profile(request):
-#         template=loader.get_template('master.html')
-#         return HttpResponse(template.render())
+def staff(request):
+        return render(request, 'contents/staff.html')
+def products(request):
+        return render(request, 'contents/products.html')
+def orders(request):
+        return render(request, 'contents/orders.html')
+def profile(request):
+        return render(request, 'contents/profile.html')
